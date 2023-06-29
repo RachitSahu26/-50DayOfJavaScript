@@ -1,0 +1,53 @@
+*{ margin: 0;
+
+padding: 0;
+box-sizing: border-box;
+}
+Body{
+    background-color: #002339;
+    color: #fff;
+font-family: 'Poppins', 'sans-serif';
+}
+
+
+.container{
+color: white;
+/* border: 2px solid red; */
+width: 633px;
+height: 500px;
+margin-left: 433px;
+margin-top: 133px;
+}
+h1{
+font-size: 55px;
+
+}
+.Passwordchang{
+    color: #019f55;
+font-size: 55px;
+} 
+
+.Password{
+    padding: 29px 132px;
+    margin: 11px 0px;
+font-size: 30px;
+border-radius: 20px;
+border: none;
+outline: 0;
+}
+ .container img{
+    width: 36px;
+    position: relative;
+    left: 564px;
+    top: 85px;
+ }
+.generate-btn{
+    padding: 15px 120px;
+     font-size: 30px;
+     border-radius: 20px;
+    background-color:  #019f55;
+color: #fff;
+border: none;
+outline: 0;
+margin-top:5px;
+}
