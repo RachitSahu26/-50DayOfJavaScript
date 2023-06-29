@@ -1,0 +1,65 @@
+@media(max-width:426px){
+.container{
+    margin-left: 20px;
+margin-top: 200px;
+
+}
+
+.Password {
+    padding: 36px 117px;
+    margin: 31px 0px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+}
+ h1{
+     text-align: center;
+ }
+.generate-btn {
+    padding: 25px 120px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: #019f55;
+    color: #fff;
+    margin-left: 84px;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    margin-top: 5px;
+}
+
+.container img {
+    width: 40px;
+    position: relative;
+    left: 483px;
+    top: 108px;
+}
+
+
+
+.social-links{
+        
+    margin-left: 102px;
+    margin-top: -10px;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+    .container{
+        margin-left: 50px;
+    }
+
+
+
+    .social-links img {
+        
+        margin-left: 38px;
+        
+    
+}
+}

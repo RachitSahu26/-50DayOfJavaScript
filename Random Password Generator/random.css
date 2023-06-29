@@ -48,6 +48,47 @@ outline: 0;
     background-color:  #019f55;
 color: #fff;
 border: none;
+cursor: pointer;
 outline: 0;
 margin-top:5px;
 }
+#copy-item{
+    cursor: pointer;
+}
+
+
+
+
+
+.my-detail{
+    /* background-color: greenyellow; */
+    column-rule: wheat;
+    width: 450px;
+    text-align: center;
+    height: 90px;
+    font-size: 20px;
+    color: whitesmoke;
+    margin-left: 47px;
+    margin-top: 155px;
+}
+.my-detail a{
+    color: white;
+}
+
+
+
+
+
+.social-links {
+    margin-top: -115px;
+    /* background-color: red; */
+    width: 533px;
+    padding: 13px 38px;
+    margin-left: 459px;
+    height: 99px;}
+.social-links img{
+    width: 70px;
+
+ padding: 10px 7px;
+
+margin-left: 13px;}
