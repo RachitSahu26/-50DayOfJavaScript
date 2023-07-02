@@ -10,8 +10,11 @@ height: 100%;
 width: 100%;
     /* background-color: yellowgreen; */
 }
+
 .container{
-height: 353px;
+    min-height: 103px;
+    height: auto;
+    /* height: 353px; */
 background-color: #fff;
 width: 533px;
 border-radius: 30px;
@@ -25,7 +28,8 @@ margin-top: 233px;
 .add-area{
     /* background-color: aqua; */
 padding: 44px 23px;
-height: 233px;
+min-height: 103px;
+height: auto;
 }
 
 input{
@@ -58,32 +62,55 @@ width: 420px;
  border: 2px solid black;
 cursor: pointer;
 }
-
-
+/* ....................ul-area........ */
 
 ul{
-    margin-top: -33px;
+
+    
 }
+
 ul li{
     list-style: none;
-    padding: 9px 5px;
-    font-size: 30px;
-    margin-left: 65px;
-
 }
 
-ul li::before{
-height: 38px;
-width: 40px;
+#ul-area{
+margin-left: 33px;
+margin-top: -33px;
+width: 433px;
+/* height: 100px; */
+height: auto;
+
+/* background-color: goldenrod; */
+}
+.ul-box{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+margin-bottom: 5px;
+}
+
+
+#empty-mark{
+    width: 45px;
+height: 45px;
+margin-left: 3px;
+
 cursor: pointer;
-position: absolute;
-content: "";
-left: 303px;
-/* top: 303px; */
-background-image: url(./bx-checkbox.svg);
-background-position: center;
-background-size: cover;
+
 }
-.checked{
-text-decoration: line-through;
+#spn{
+/* background-color: rgb(255, 239, 151); */
+    font-size: 35px;
+    margin-left: -12px;
+    width: 329px;
+}
+
+#spnLine{
+    text-decoration: line-through;
+}
+#cross-mark{
+   width: 45px;
+   height: 45px;
+   cursor: pointer;
+
 }
