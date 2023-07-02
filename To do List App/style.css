@@ -1,116 +1,57 @@
-*{
-    margin: 0;padding: 0px;
-}
-body{
-    /* overflow-y: hidden; */
- background-color: rgb(255, 176, 176);
-}
-.main{
-height: 100%;
-width: 100%;
-    /* background-color: yellowgreen; */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.container{
-    min-height: 103px;
-    height: auto;
-    /* height: 353px; */
-background-color: #fff;
-width: 533px;
-border-radius: 30px;
-margin-left:254px;
-margin-top: 233px;
-}
-.head-area h1{
- text-align: center;
+.container {
+    background: linear-gradient(120deg, #153677, #4e085f);
+
+    height: 100vh;
+    min-height: 100%;
 }
 
-.add-area{
-    /* background-color: aqua; */
-padding: 44px 23px;
-min-height: 103px;
-height: auto;
+
+.to-do-heading {
+
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left: 533px;
+    margin-top: 133px;
+
 }
 
-input{
-background: transparent;
-    padding: 20px 5px;
-    background-color: rgb(224, 224, 224);
-    border-radius: 20px;
+.to-do-heading h1 {
+    text-align: center;
+}
+
+
+.input-box {
+    background-color: rgb(225, 225, 225);
     border: none;
-     outline: none;
-     font-size: 20px;
-margin-left:25px ;
-width: 420px;
-    }
+    outline: none;
 
-
-
-    .add-btn{
-        position: relative;
-        padding: 18px 30px;
-        border: none;
-        border-radius: 50px;
-        font-size: 25px;
-        outline: none;
-        left: 383px;
-        top: -64px;
-        background-color: rgb(255, 227, 66);
+    border-radius: 50px;
+    padding: 12px 14px;
+    margin: 20px 36px;
 }
+
+
+
+.add-btn {
+    padding: 5px 10px;
+    margin: 20px -23px;
+    width: 104px;
+    border-radius: 50px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    background-color: rgb(242, 242, 86);
+}
+
 .add-btn:hover{
-    background-color: rgb(255, 239, 151);
- border: 2px solid black;
-cursor: pointer;
-}
-/* ....................ul-area........ */
-
-ul{
-
-    
-}
-
-ul li{
-    list-style: none;
-}
-
-#ul-area{
-margin-left: 33px;
-margin-top: -33px;
-width: 433px;
-/* height: 100px; */
-height: auto;
-
-/* background-color: goldenrod; */
-}
-.ul-box{
-    display: flex;
-    flex-direction: row;
-justify-content: space-between;
-margin-bottom: 5px;
-}
-
-
-#empty-mark{
-    width: 45px;
-height: 45px;
-margin-left: 3px;
-
-cursor: pointer;
-
-}
-#spn{
-/* background-color: rgb(255, 239, 151); */
-    font-size: 35px;
-    margin-left: -12px;
-    width: 329px;
-}
-
-#spnLine{
-    text-decoration: line-through;
-}
-#cross-mark{
-   width: 45px;
-   height: 45px;
-   cursor: pointer;
-
+    background-color: rgb(179, 179, 11);
 }
