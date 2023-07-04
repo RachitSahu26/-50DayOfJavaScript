@@ -1,34 +1,32 @@
-@media(max-width:1024px){
+@media(max-width:1440px) {
 
-    .row{
-        margin-left: -225px;
+
+    .row {
+        padding-top: 265px;
+        margin-left: -201px;
     }
 }
 
 
 
-@media(max-width:768px){
 
-    body{
-        overflow-y:
-        hidden ;
-       }
-       
-        .row{
-        
-            padding-top: 412px;
-            /* margin-top: 555px; */
-            margin-left: -340px;
-        
-        }
-    
-        .container{
-            height: 1460px;
+@media(max-width:1025px) {
+
+
+
+    .row {
+        padding-top: 174px;
+        margin-left: -224px;
+    }
+
+
+    .container {
+
+        height: 634px;
         padding-top: 0px;
-        width: 177%;
-        
-        
-        }
+        width: 100%;
+    }
+
 
 
 
@@ -36,40 +34,134 @@
 }
 
 
-@media(max-width:425px){
+
+@media(max-width:769px) {
+
+
+
+
+    .row {
+
+        padding-top: 229px;
+        /* margin-top: 555px; */
+        margin-left: -338px;
+    }
+
+    .container {
+        /* height: 1460px; */
+        padding-top: 0px;
+        /* width: 177%; */
+
+
+    }
+
+
+
+
+}
+
+
+@media(max-width:426px) {
+
+    
+    .row {
+
+        padding-top: 134px;
+        /* margin-top: 555px; */
+        margin-left: -520px;
+    }
+}
+
+.container {
+    overflow: hidden;
+
+    height: 1000px;
+    padding-top: 0px;
+    width: 100%;
+}
+
+
+@media(max-width:376px) {
 
    
-   body{
-    overflow-y:
-    hidden ;
-   }
-   
-    .row{
-    
-        padding-top: 412px;
-        /* margin-top: 555px; */
-        margin-left: -399px;
-    
+
+    .container {
+        overflow: hidden;
+
     }
+
+
+
+    .row {
+        margin-left: -550px;
+    }
+
+
+
+
+
+span{
+     
+        top: 4px;
+        left: 261px;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:320px) {
 
     .container{
-        height: 1460px;
-    padding-top: 0px;
-    width: 177%;
-    
+        scroll-behavior: smooth;
+    overflow-y: scroll;
     
     }
-}
 
-@media(max-width:375px){
-
-    
-    .row{
-        margin-left: -353px;
+  .row {
+        margin-left: -550px;
     }
 
+
+    #add-btn {
+        padding: 15px 10px;
+        margin: 30px -129px;
+       
+    }
+    
+
+
+span{
+     
+    top: 0px;
+    left: 214px;
+    }
+
+
+
+
+
+
 }
-
-
-
-
