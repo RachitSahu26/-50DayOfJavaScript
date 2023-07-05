@@ -7,14 +7,12 @@ let  viewPass=document.getElementById("view-pass");
 const  show=()=>{
     if(inputBox.type=="password"){
         inputBox.type="text";
-        viewPass.src="hide.png";
-        let hFour=document.createElement("h4");
-        hFour.textContent='Password is showing';
-        showWaring.appendChild(hFour);
+        viewPass.src="view.png";
+        
     }
     else{
         inputBox.type="password";
-        viewPass.src="view.png";
+        viewPass.src="hide.png";
 
     }
 

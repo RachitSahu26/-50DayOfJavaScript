@@ -23,7 +23,7 @@ font-size: 55px;
 
 }
 .Passwordchang{
-    color: #019f55;
+    color: #85019f;
 font-size: 55px;
 } 
 
@@ -45,7 +45,7 @@ outline: 0;
     padding: 15px 120px;
      font-size: 30px;
      border-radius: 20px;
-    background-color:  #019f55;
+    background-color:  #87019f;
 color: #fff;
 border: none;
 cursor: pointer;
@@ -98,6 +98,6 @@ margin-left: 13px;}
 
 .social-links img:hover{
    border-radius: 50%;
-background-color: #019f55;   
+background-color:  #87019f;  
 
 }
