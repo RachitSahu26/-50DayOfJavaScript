@@ -1,0 +1,27 @@
+body {
+    background-color: #473d84;
+
+}
+
+.container {
+    color: black;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    /* min-height: 240px; */
+    margin-left: 293px;
+   height: 400vh;
+    margin-bottom: 20px;
+    margin-top: 133px;
+}
+
+.box {
+    background-color: rgb(207, 99, 117);
+    width: 400px;
+margin:  2rem 15rem;
+    height: 200px;
+}
