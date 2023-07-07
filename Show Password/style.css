@@ -21,7 +21,9 @@ left: 463px;
 position: relative;
     height: 200px;
 }
-
+.pass-head-field h1{
+    color: black;
+}
 hr{
     color:black;
     border-bottom: 3px solid black;
@@ -52,5 +54,15 @@ padding: 15px 10px;
 
 .spn{
     color: rgb(145, 232, 15);
+/* color: #f79319; */
 }
 
+#pass-msg{
+    position: relative;
+    bottom: 116px;
+    right: 37px;
+font-size: 20px;
+    color: black;
+    display: none;
+    font-weight: 300;
+}
