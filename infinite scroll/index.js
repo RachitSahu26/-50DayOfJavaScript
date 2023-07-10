@@ -20,30 +20,46 @@
 
 
 //    })
+let limit=2;
+fetch(`https://fakestoreapi.com/products?limit=${limit}`)
+   .then((res) => {
+      return res.json();
+   }).then((storedata) => {
+      console.log(storedata);
+      rachitdata = '';
+      storedata.map((rachit) => {
+         rachitdata += ` <div class="card" style="width: 18rem;">
+         <h1>${rachit.id} </h1>
+         <img src=${rachit.image} id="card-img" class="card-img-top" alt="...">
+         <div class="card-body">
+             <h5 class="card-title">${rachit.title} </h5>
+             <p class="card-text">${rachit.description} </p>
+         </div>
+         <ul class="list-group list-group-flush">
+             <li class="list-group-item">${rachit.price} </li>
+             <li class="list-group-item">${rachit.rating} </li>
 
-fetch("https://fakestoreapi.com/products?limit=150")
-.then((res)=>{
-   return res.json();
-}).then((storedata)=>{
-   console.log(storedata);
-rachitdata='';
-  storedata.map((rachit)=>{
-rachitdata+=`
-<div class="card" style="width: 18rem;">
-<h1>${rachit.id} </h1>
-<img src=${rachit.image} class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">${rachit.title} </h5>
-  <p class="card-text">${rachit.description} </p>
-</div>
-<ul class="list-group list-group-flush">
-  <li class="list-group-item">${rachit.price} </li>
-  <li class="list-group-item">${rachit.rating} </li>
+         </ul>
+     </div>`
 
-</ul>
 
-`
+         document.getElementById("store").innerHTML = rachitdata;
+      })
+   })
 
-document.getElementById("store").innerHTML=rachitdata;
-  }) 
-})
+
+const showData=()=>{
+   setTimeout(()=>{
+      limit++
+   },300)
+}
+   window.addEventListener("scroll",()=>{
+      const{scrollHieght,scrollTop, clientHeight}=document.documentElement;
+   if(clientHeight+scrollTop>=scrollHieght){
+showData();
+alert;
+   }
+   
+   
+   
+   })
