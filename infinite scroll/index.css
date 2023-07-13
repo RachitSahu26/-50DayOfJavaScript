@@ -1,23 +1,47 @@
-body {
-    background-color: #473d84;
+.h1-head{
+    text-align: center;
+  margin-top: 33px;
+/* margin-left: 13px; */
+}
+.spn{
+    color: red;
+    margin-left: 133px;
+    line-height: 10px;
 
 }
+body{
+    
+    background-color: #19172e;
 
-
-.box {
-    background-color: rgb(207, 99, 117);
-    width: 400px;
-margin:  2rem 15rem;
-    height: 200px;
 }
-#store{
+#container{
+    justify-content: center;
+    background-color: #19172e;
+
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 100px;
+    padding-top: 133px;
+    height: auto;
+    margin-top: 63px;
 }
-.card{
-    margin: 10px 15px;
+#card{
+    margin-top: 30px;
 }
-#card-img{
-    /* width: 33px; */
+.item{
+    /* background-color: rgb(160, 155, 155); */
+    width: 300px; 
+    margin-top: -34px;
+    /* margin: 10px 10px; */
+ margin-top: -146px;
+    height: 600px;
+}
+
+.show-more{
+margin-top: 33px;
+position: relative;
+top: -133px;
+left: 513px;
 }
