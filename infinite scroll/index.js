@@ -1,65 +1,66 @@
-// fetch("https://fakestoreapi.com/products?limit=150")
-//    .then((res)=>{
-// // console.log(res);
-// return res.json();
-//    })
-//    .then((Objectdata)=>{
-// console.log(Objectdata);
-// let objectdatastore='';
-// Objectdata.map((values)=>{
-//     objectdatastore+=` <div class="card" style="width: 18rem;">
-//     <img src=${values.image} class="card-img-top" alt="...">
-//     <div class="card-body">
-//       <h5 class="card-title">${values.category} </h5>
-//       <p class="card-text">${values.description}</p>
-//       <a href="#" class="btn btn-primary">${values.title}</a>
-//     </div>`;
-//     document.getElementById("store").innerHTML= objectdatastore;
-// })
+
+// 0=>
+// decleration for access 
+const card = document.getElementById("card");
+const container = document.getElementById("container");
+const showMore = document.getElementById("show-more");
+
+// 1=>
+// when i will click show more buttton then code will be started here 
 
 
 
-//    })
-let limit=2;
-fetch(`https://fakestoreapi.com/products?limit=${limit}`)
-   .then((res) => {
-      return res.json();
-   }).then((storedata) => {
-      console.log(storedata);
-      rachitdata = '';
-      storedata.map((rachit) => {
-         rachitdata += ` <div class="card" style="width: 18rem;">
-         <h1>${rachit.id} </h1>
-         <img src=${rachit.image} id="card-img" class="card-img-top" alt="...">
-         <div class="card-body">
-             <h5 class="card-title">${rachit.title} </h5>
-             <p class="card-text">${rachit.description} </p>
-         </div>
-         <ul class="list-group list-group-flush">
-             <li class="list-group-item">${rachit.price} </li>
-             <li class="list-group-item">${rachit.rating} </li>
+showMore.addEventListener("click", function () {
+// 2=>
+   //   now code will be redirect getImage function
+   getImage();
 
-         </ul>
-     </div>`
+})
 
 
-         document.getElementById("store").innerHTML = rachitdata;
-      })
-   })
-
-
-const showData=()=>{
-   setTimeout(()=>{
-      limit++
-   },300)
+function getRandomNumber() {
+   return Math.floor(Math.random() * 300) + 2
 }
-   window.addEventListener("scroll",()=>{
-      const{scrollHieght,scrollTop, clientHeight}=document.documentElement;
-   if(clientHeight+scrollTop>=scrollHieght){
-showData();
-alert;
-   }
-   
-   
-   
-   })
+
+
+
+// 3=>
+// now in third step data will be get from this API
+async function getImage() {
+   fetch(`https://rickandmortyapi.com/api/character/${getRandomNumber()}`)
+      .then((response) => {
+         return response.json();
+      })
+      .then((data) => {
+         console.log(data);
+         // 4=>
+         // through fetch Api i got all data so i pash the data as argument in addItem
+         addItem(data);
+      })
+}
+
+
+// 5=>
+// now data will be show in created div 
+const addItem = (data) => {
+   let storDiv = document.createElement("div");
+   storDiv.classList.add("item")
+   storDiv.innerHTML = (`   <div class="card" id="card" style="width: 18rem;">
+
+   <img  src=${data.image} />
+ 
+ 
+   <div class="card-body">
+       <h5 class="card-title">${data.name}</h5>
+       <p class="card-text">${data.id}</p>
+       <a href="#" class="btn btn-warning">Go somewhere</a>
+   </div>
+
+
+</div>
+`)
+
+   container.appendChild(storDiv)
+
+
+}
