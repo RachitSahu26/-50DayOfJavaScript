@@ -1,6 +1,17 @@
 const btn = document.getElementById("btn");
 const showResult = document.getElementById("show-result");
 
+
+
+// .show.
+let Capital = document.getElementById(" Capital");
+let Continent = document.getElementById("Continent");
+let Population = document.getElementById("Population");
+let CommanLanguage= document.getElementById("Comman-Language");
+let Curreny = document.getElementById("Curreny");
+let flags=document.getElementById("flags");
+
+
 const inputBox = document.getElementById("input-box");
 
 btn.addEventListener("click", () => {
@@ -13,37 +24,22 @@ btn.addEventListener("click", () => {
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
-            createShowArea(data);
+            showResult.style.display='block';
+            countryData=data[0]
+console.log(countryData)
+            flags.src= countryData.flags.svg;
+            Continent.innerHTML= countryData.continents
+            Population.innerHTML= countryData.population
+            Curreny.innerHTML=countryData.currencies[Object.keys(countryData.currencies)].name 
+            Capital.innerHTML= countryData.capital
+
+            CommanLanguage.innerHTML=Object.values(countryData.languages).toString().split(',').join(',');
+
         })
 
 
 })
 
 
-const createShowArea = (data) => {
-const container = document.getElementById("container");
-
-const showed = document.getElementById("showed");
-  let shoWed=document.createElement('div');
-  shoWed.classList.add("showed")
-
-    shoWed.innerHTML = (`
-    
-    
-    <div class="show-result" id="show-result">
-    <img src=${data.flags.svg}>
-    
-    
-    <h2> Capital: <span>${data.capital}</span></h2>
-    <h2> Continent: <span>${data.continents}</span></h2>
-    <h2> Population: <span>${data.population}</span></h2>
-    <h2> Curreny: <span>${data.currencies}</span></h2>
-    <h2> Comman Language: <span>${data.languages}</span></h2>
-    </div>
-`)
-container.appendChild(shoWed)
 
 
-
-
-}

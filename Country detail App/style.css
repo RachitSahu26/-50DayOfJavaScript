@@ -8,7 +8,7 @@ body {
 .container {
     background-color: white;
     width: 653px;
-    min-height: 623px;
+    min-height: 123px;
     margin-top: 133px;
     height: auto;
     border-radius: 10px;
@@ -55,9 +55,13 @@ body {
 
 .show-result {
     padding-left: 44px;
-
-    background-color: red;
+    display: none;
+    /* background-color: red; */
     height: 533px;
+}
+
+.show-result span {
+    color: red;
 }
 
 .show-result img {
@@ -66,8 +70,77 @@ body {
     height: 133px;
 }
 
-#showed{
-background-color: greenyellow;
-height: 333px;
-width: 643px;
+#showed {
+    background-color: greenyellow;
+    height: 333px;
+    width: 643px;
+}
+
+
+@media screen and (max-width:790px) {
+    .container {
+        /* background-color: rgb(177, 86, 86); */
+        width: 553px;
+
+    }
+    #input-box{
+        width: 300px;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:497px) {
+
+    .continent {
+
+        background-color: greenyellow;
+        width: 153px;
+        min-height: 123px;
+        margin-top: 133px;
+        height: auto;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+
+
+    .search-box {
+        margin-left: 33px;
+        margin-top: 12px;
+        width: 305px;
+
+    }
+
+
+
+    #input-box {
+        width: 190px;
+        margin-left: 0;
+    }
+
+    .btn {
+        margin-top: -2px;
+        /* margin-left: 100px; */
+    }
+
+}
+
+@media screen and(max-width:379px) {
+    .search-box {
+        margin-left: 10px;
+        width: 80px;
+        /* padding: 0px; */
+        padding-left: -33px;
+    }
+
+    #input-box {
+        margin-left: -60px;
+    }
 }
