@@ -18,9 +18,10 @@ btn.addEventListener("click", () => {
 
 
     let country = inputBox.value;
-    let url = `https://restcountries.com/v3.1/name/${country}?fullText=true`;
+    let url = `https://restcountries.com/v3.1/name/${country}`;
+   
 
-    fetch(url)
+    fetch( url )
         .then((response) => response.json())
         .then((data) => {
             console.log(data);
