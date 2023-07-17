@@ -3,6 +3,7 @@ body {
     justify-content: center;
     background-color: rgb(56, 56, 103);
 
+
 }
 
 .container {
@@ -77,70 +78,115 @@ body {
 }
 
 
-@media screen and (max-width:790px) {
+
+/* .............footer...... */
+
+
+.my-detail {
+    color: black;
+    padding-top: 22px;
+    margin-top: 33;
+    margin-top: 32px;
+    background-color: white;
+    width: 303px;
+    margin-left: 153px;
+    border-radius: 10px;
+    height: 152px;
+    text-align: center;
+}
+
+.my-detail a {
+    color: black;
+
+}
+
+
+.link-box{
+    display: flex;
+    padding:10px 2px ;
+border-radius: 10px;
+    /* background-color: red; */
+    padding-left: 33px;
+}
+.link-box img{
+    width: 33px ;
+    margin-left: 33px;
+
+    height: 33px;
+}
+
+.link-box img:hover{
+    width: 33px ;
+    border-radius: 50%;
+    margin-left: 33px;
+    cursor: pointer;
+    border: 2px solid red;
+    scale: 1.2;
+background-color: blueviolet;
+    height: 33px;
+}
+@media screen and (max-width:768px) {
+    .wrapped {
+        /* background-color: red; */
+        margin-right: 52px;
+    }
+}
+
+@media screen and (max-width:715px) {
+    .wrapped {
+        margin-right: 2px;
+        /* background-color: greenyellow; */
+    
+    }
+
     .container {
-        /* background-color: rgb(177, 86, 86); */
-        width: 553px;
+        /* background-color: greenyellow; */
+        width: 533px;
+padding-top: 22px;
 
     }
+
     #input-box{
-        width: 300px;
+        width: 333px;
+
     }
+.my-detail{
+        /* background-color: greenyellow; */
+margin-left:93px ;
+padding-top: 22px;
+margin-top: 33px;
+}
+
+}
+
+@media screen and (max-width:587px) {
+    .wrapped {
+        margin-right: -135px;
+        /* background-color: red; */
+    }
+
 
 
 }
 
 
 
-
-
-
-
-@media screen and (max-width:497px) {
-
-    .continent {
-
-        background-color: greenyellow;
-        width: 153px;
-        min-height: 123px;
-        margin-top: 133px;
-        height: auto;
-        border-radius: 10px;
-        justify-content: center;
+@media screen and (max-width:457px) {
+    .wrapped {
+        margin-right: -195px;
+        /* background-color: red; */
     }
 
 
-
-    .search-box {
-        margin-left: 33px;
-        margin-top: 12px;
-        width: 305px;
-
-    }
-
-
-
-    #input-box {
-        width: 190px;
-        margin-left: 0;
-    }
-
-    .btn {
-        margin-top: -2px;
-        /* margin-left: 100px; */
-    }
 
 }
 
-@media screen and(max-width:379px) {
-    .search-box {
-        margin-left: 10px;
-        width: 80px;
-        /* padding: 0px; */
-        padding-left: -33px;
+@media screen and (max-width:400px) {
+    .wrapped {
+        margin-right: -230px;
+       
+        /* background-color: red; */
     }
 
-    #input-box {
-        margin-left: -60px;
-    }
+
 }
