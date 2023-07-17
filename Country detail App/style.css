@@ -116,7 +116,7 @@ border-radius: 10px;
 }
 
 .link-box img:hover{
-    width: 33px ;
+    width: 53px ;
     border-radius: 50%;
     margin-left: 33px;
     cursor: pointer;
@@ -182,11 +182,42 @@ margin-top: 33px;
 }
 
 @media screen and (max-width:400px) {
+ 
     .wrapped {
-        margin-right: -230px;
-       
+        margin-right: 2px;
+ overflow: hidden;   
+ margin-top: 20px;   
         /* background-color: red; */
+ display: flex;
+ flex-direction: column;
     }
+    #input-box{
+    width:200px;
+font-size: 20px;
+}
 
+
+
+.container {
+    background-color: white;
+    /* background-color: greenyellow; */
+    width:380px;
+    margin-left: 0px;
+ 
+}
+
+.my-detail{
+     color: black;
+    
+    background-color: white;
+    width: 271px;
+/* background-color: red; */
+    border-radius: 10px;
+position:relative;
+    height: 152px;
+ top: 3px;
+ left: -25px;   
+    text-align: center;
+}
 
 }
