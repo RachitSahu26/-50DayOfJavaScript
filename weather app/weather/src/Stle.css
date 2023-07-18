@@ -1,0 +1,98 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 24, 56);
+
+}
+
+.Weather_card{
+    background-color:white;
+    height: 530px;
+    width: 700px;
+    margin-top: 203px;
+    /* height: 22px; */
+    
+    border-radius: 20px;
+}
+
+.Weather-head{ 
+    text-align: center;
+}
+.Input-box{
+    /* background-color: greenyellow; */
+}
+.input{
+    width: 450px;
+    font-size: 22px;
+    border-radius: 5px;
+    /* border: none; */
+    padding: 10px 10px;
+    /* outline: none; */
+    margin-left: 70px;
+}
+
+
+.btn-box{
+    /* background-color: goldenrod; */
+margin-top: 12px;
+}
+.Btn{
+    font-size: 25px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    /* border: none; */
+position: relative;
+top: -63px;
+left: 500px;
+    /* outline: none; */
+    background-color: rgb(165, 68, 255);
+transition: all ease 0.6s ;
+}
+.Btn:hover{
+    cursor: pointer;
+    background-color: rgb(176, 92, 255);
+scale: 1.1;
+    /* border: none; */
+
+}
+
+.show-result-box{
+    /* background-color: red; */
+   margin-top: -33px;
+   height: 133px;
+}
+#temprature{
+    font-size: 50px;
+text-align: center;
+
+}
+#city_name{
+    font-size: 50px;
+    text-align: center;
+    line-height: 5px;
+
+}
+
+.extra-detail{
+    /* background-color: aqua; */
+    height: 196px;
+    display: flex;
+    padding: 15px 25px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.humidity{
+/* background-color: brown; */
+}
+#Humidity-detail,#humi-tex{
+font-size: 30px;
+text-align: center;
+}
+.wind-speed{
+    /* background-color:yellow ; */
+}
+#wind-detail,#speed-tex{
+    font-size: 30px;
+    text-align: center;
+    }
