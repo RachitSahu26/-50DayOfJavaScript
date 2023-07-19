@@ -192,10 +192,10 @@ margin-top: 33px;
 
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:400px) {
  
     .wrapped {
-        margin-right: 2px;
+        margin-right: -22px;
  overflow: hidden;   
  margin-top: 20px;   
         /* background-color: red; */
