@@ -213,7 +213,7 @@ font-size: 15px;
     background-color: white;
     /* background-color: greenyellow; */
     width:300px;
-    margin-left:-2px;
+    margin-left:25px;
  
 }
 
@@ -227,7 +227,7 @@ font-size: 15px;
 position:relative;
     height: 152px;
  top: 3px;
- left: -80px;   
+ left: -60px;   
     text-align: center;
 }
 
