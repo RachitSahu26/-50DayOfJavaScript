@@ -33,6 +33,7 @@ h2 {
   padding-right: 10px;
   line-height: 80px;
   font-size: 1.5rem;
+  width: 234px;
   border-radius: 20px 20px 0 0;
   background-color: white;
   color: black;
@@ -40,6 +41,7 @@ h2 {
 
 .buttons {
   display: grid;
+  margin-top: 12px;
   grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
 }
 
@@ -48,9 +50,16 @@ h2 {
   line-height: 60px;
   text-align: center;
   font-size: 1.7rem;
+  border-radius: 30px;
+  transition: 0.4s;
+margin: 2px;
   cursor: pointer;
 }
-
+.button:hover{
+  border-radius: 30px;
+  box-shadow:2px 2px 12px 2px red ;
+scale: 1.1;
+}
 .button.left {
   border-radius: 0 0 0 15px;
 }
@@ -81,6 +90,3 @@ h2 {
   position: fixed;
   text-align: center;
 }
-
-
-
