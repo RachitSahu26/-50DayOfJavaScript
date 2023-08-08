@@ -79,7 +79,7 @@ flex-wrap: wrap;
     width: 250px;
      height: 250px;
 margin: 5px;
-
+margin-left: 30px;
     }
 
 .img-card img{
@@ -96,6 +96,12 @@ transition: all ease-in 0.3s;
 
 
 
+.msg-query{
+    color: red;
+display: flex;
+font-size: 40px;
+margin: 0 auto;
+margin-top: 20px;}
 
 
 
@@ -106,22 +112,29 @@ transition: all ease-in 0.3s;
 
 
 
+.more-img-btn{
+    /* background-color: red; */
+    padding: 15px 1px;
+}
 
 
 
 
 
-
-
-/* #show-btn{
-    border-radius: 20px;
-    padding: 5px 5px ;
-    border: none;
-    margin-left: 50%;
-    cursor: pointer;
+#more-btn{
+    border-radius: 10px;
+    font-size: 35px;
+border: none;
+    padding: 5px 20px;
+    margin: 0 auto;
+    display: flex;
+    background-color: aqua;
     display: none;
-    outline: none;
-   background-color: aqua;
-   font-size: 20px;
-    
-} */
+transition: all ease-in 0.2s;
+}
+#more-btn:hover{
+    scale: 1.1;
+border: 2px solid rgb(90, 90, 249) ;
+
+    cursor: pointer;
+}
