@@ -31,7 +31,7 @@ if(page===1){
             imagebox.classList.add("img-card")
             imagebox.innerHTML = `<img src="${photo.urls.full}">`
             imagShowing.appendChild(imagebox);
-    
+            moreBtn.style.display="block";
     
         });
     
