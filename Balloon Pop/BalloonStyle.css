@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.wrapped {
+
+    border: 2px solid aqua;
+    height: 80vh;
+}
+
+.balloon-box {
+    border: 2px solid rgb(64, 255, 0);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 200px;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+#balloon {
+    height: 90px;
+    width: 90px;
+    font-size: 40px;
+    /* background-color: red; */
+    border-radius: 100%;
+    margin: 2.5px 5 px 2.5px 0px;
+}
+#balloon:nth-child(1n){
+    background: #4285F4;
+    color: #4285F4;
+}
+
+
+#balloon:nth-child(2n){
+    background:#DB4437;
+    color:#DB4437;
+  }
+  
+  #balloon:nth-child(3n){
+    background:#F4B400;
+    color:#F4B400;
+  }
+  
+  #balloon:nth-child(4n){
+    background:#0F9D58;
+    color:#0F9D58;
+  }
+  
